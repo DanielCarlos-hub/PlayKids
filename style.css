@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css?family=Wendy+One');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.428em;
+    color: #1e1e1e;
+    background-color: lightskyblue;
+}
+h2 {
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: white;
+    border-radius: 8px;
+    padding: 50px; 25px;
+    border: 1px solid gray;
+    box-shadow: 7px 7px 7px #777777;
+}
+.homeButton {
+    background: lightskyblue;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.homeButtonInverse {
+    background: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 40px;
+}
+
+/* *********************************
+ *    Generic FlexBox Styling      *
+ **********************************/
+.flexContainer {
+    display: flex;
+}
+.flexItem {
+    flex: 1;
+}
+.flexStart {
+    justify-content: flex-start;
+}
+.flexCenter {
+    justify-content: center;
+}
+.flexEnd {
+    justify-content: flex-end;
+}
+.flexWrap {
+    flex-wrap: wrap;
+}
+.itemCenter {
+    align-items: center;
+}
+.flexColumn {
+    flex-direction: column;
+}
+.flexSpaceBetween {
+    justify-content: space-between;
+}
+.flexSpaceAround {
+    justify-content: space-around;
+}
+
+/* *********************************
+ *    Shared Styling               *
+ **********************************/
+.fullHeight {
+    height: 100vh;
+}
+.blueBackground {
+    background: lightskyblue;
+    height: 60px;
+}
+.terrainBackground{
+    background: linear-gradient(to bottom, rgba(243,226,199,1) 0%, rgba(193,158,103,1) 47%,
+    rgba(182,141,76,1) 58%, rgba(233,212,179,1) 100%);
+}
+.whiteBackground {
+    background: white;
+}
+.whiteText {
+    color: white;
+}
+.height50 {
+    height: 50px;
+    line-height: 50px;
+}
+
+/* *********************************
+ *    Navigation                   *
+ **********************************/
+.nav {
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0 1em;
+    color: #000;
+    font-size: 18px;
+}
+
+.nav a:hover{
+    color: #FEB120;
+}
+
+
+/* *********************************
+ *    Responsive Website           *
+ **********************************/
+.main{
+    order: 2;
+    padding: 20px;
+    border-left: 1px solid #777777;
+    border-right: 1px solid #777777;
+}
+
+/* *********************************
+ *    Center Image                 *
+ **********************************/
+.centerImage {
+    background: url('images/ocean.jpg') center;
+    background-size: cover;
+}
+
+
+.playlogo{
+    font-family: 'Wendy One', sans-serif;
+    color: #FEB120;
+}
+
+.bluelogo{
+    color: #18C73B;
+}
+.content{
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(0deg, #022244, #58c8da);
+}
+
+.imagem1{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    top: 47%;
+    left: 0px;
+    background-image: url(img/algas2.png);
+    opacity: 0.6;
+}
+.imagem2{
+    position: absolute;
+    width: 80px;
+    height: 250px;
+    top: 55%;
+    left: 18%;
+    background-image: url(img/algas2.png);
+    opacity: 0.6;
+}
+
+.imagem3{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    top: 47%;
+    right: 0px;
+    background-image: url(img/algas2reverse.png);
+    opacity: 0.6;
+}
+.imagem4{
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    top: 47%;
+    right: 18%;
+    background-image: url(img/algas2reverse.png);
+    opacity: 0.6;
+}
+
+.imagem5{
+    position: absolute;
+    width: 309px;
+    height: 189px;
+    left: 0;
+    top: 69%;
+    background-image: url(img/conchas2.png) ;
+    opacity: 1;
+}
+
+.imagem6{
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    right: 0;
+    top: 72%;
+    background-image: url(img/caramujo2.png);
+    opacity: 1;
+}
+
+.imagem7{
+    position: absolute;
+    width: 400px;
+    height: 190px;
+    right: 20%;
+    top: 64%;
+    background-image: url(img/algas3.png);
+    opacity: 0.6;
+}
+.imagem8{
+    position: absolute;
+    width: 400px;
+    height: 190px;
+    left: 23%;
+    top: 64%;
+    background-image: url(img/algas3reverse.png);
+    opacity: 0.6;
+}
+
+/*.ocean {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}*/
+
+/*.content::after, 
+.content::before {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  content: '';
+  top: 0;
+  border-radius: 100%;
+  animation: waves 10s ease infinite;
+  opacity: 0.2;
+}
+
+.content::before {
+  top: -5px;
+  animation-delay: 5s;
+  opacity: 0.1;
+  left: -5%;
+}
+
+@keyframes waves {
+      0%, 100% {transform: rotate(-2deg);}
+      50% {transform: rotate(2deg);}
+}
+*/
+.bubbles {
+  width: 99%;
+  height: 300px;
+  position: relative;
+  animation: bubbles 10s linear infinite;
+}
+
+    @keyframes bubbles {
+      0%, 100% {transform: rotate(-5deg);}
+      50% {transform: rotate(5deg);}
+}
+
+.bubbles span {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+  bottom: -10%;
+  animation: bubble 10s ease-in-out infinite;
+}
+
+    @keyframes bubble {
+      0% {bottom: -10%; opacity: 0;}
+      100% {bottom: 100%;}
+    }
+
+.bubbles span:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  left: 2%;
+  animation-delay: 3s;
+  animation-duration: 10s;
+  opacity: 0.2;
+}
+
+.bubbles span:nth-child(2) {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  left: 10%;
+  animation-delay: 1s;
+  animation-duration: 5s;
+  opacity: 0.1;
+}
+
+.bubbles span:nth-child(3) {
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+  left: 15%;
+  animation-delay: 5s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubbles span:nth-child(4) {
+  width: 35px;
+  height: 35px;
+  opacity: 0.5;
+  left: 20%;
+  animation-delay: 8s;
+  animation-duration: 8s;
+  opacity: 0.2;
+}
+
+.bubbles span:nth-child(5) {
+  width: 45px;
+  height: 45px;
+  opacity: 0.5;
+  right: 2%;
+  animation-delay: 10s;
+  animation-duration: 15s;
+  opacity: 0.1;
+}
+
+.bubbles span:nth-child(6) {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  right: 10%;
+  animation-delay: 3s;
+  animation-duration: 30s;
+  opacity: 0.4;
+}
+
+.bubbles span:nth-child(7) {
+  width: 15px;
+  height: 15px;
+  opacity: 0.5;
+  right: 15%;
+  animation-duration: 25s;
+  opacity: 0.3;
+}
+
+.bubbles span:nth-child(8) {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+  right: 20%;
+  animation-duration: 10s;
+  opacity: 0.2;
+}
+
+#title{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-size: 50px;
+  z-index: 1;
+  letter-spacing: 15px;
+}
+
+.jogomemoria{
+    position: absolute;
+    width: 680px;
+    height: 510px;
+    left: 25%;
+    top: 11%;
+    text-align: center;
+}
+#game img {
+  width: 135px;
+  height: 110px;
+  margin: 10 0 0 10;
+}
+
+.reiniciar {
+    background: -moz-linear-gradient(center top , #EDEDED 5%, #DFDFDF 100%) repeat scroll 0 0 #EDEDED;
+    border: 1px solid #DCDCDC;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 0 0 #FFFFFF inset;
+    color: #777777;
+    display: inline-block;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFFFFF;
+
+}
+.reiniciar:hover {
+    background: -moz-linear-gradient(center top , #DFDFDF 5%, #EDEDED 100%) repeat scroll 0 0 #DFDFDF;
+}
+.reiniciar:active {
+    position: relative;
+    top: 1px;
+}
+
+#titulo {
+    position: absolute;
+    width: 680px;
+    height: 50px;
+    left: 25%;
+    top: 12%;
+    text-align: center;
+    font-family: 'Wendy One', sans-serif;
+    color: #FEB120;
+    font-size: 30px;
+}
+
+#progress {
+    position: absolute;
+    width: 680px;
+    height: 50px;
+    left: 25%;
+    top: 20%;
+    text-align: center;
+}
+#aritmetica {
+    position: absolute;
+    width: 680px;
+    height: 300px;
+    left: 25%;
+    top: 27%;
+    text-align: center;
+}
+
+#jogodavelha{
+    position: absolute;
+    width: 680px;
+    height: 300px;
+    left: 38%;
+    top: 20%;
+    text-align: center;
+}

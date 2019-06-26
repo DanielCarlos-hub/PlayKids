@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PlayKids</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="flexContainer flexColumn fullHeight whiteBackground">
+            <nav class="flexContainer blueBackground">
+                <ul class="nav">
+                    <li><h1><span class="playlogo">Play</span>Kids</h1></li>
+                </ul>
+                <ul class="nav flexContainer">
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="memoria.html">Jogo da Memória</a></li>
+                    <li><a href="aritmetica.html">Aritmética</a></li>
+                    <li><a href="jogodavelha.html">Jogo da Velha</a></li>
+                </ul>
+            </nav>
+            <div class="flexContainer flexItem">
+                <h1 id="title" class="playlogo">PlayKids</h1>
+                <div class="content">
+                    <div class="bubbles">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>                        
+                    </div>
+                </div>
+                <div class="imagem1"></div>
+                <div class="imagem2"></div>
+                <div class="imagem3"></div>
+                <div class="imagem4"></div>
+                <div class="imagem5"></div>
+                <div class="imagem6"></div>
+                <div class="imagem7"></div>
+                <div class="imagem8"></div>
+            </div>
+            <footer class="flexContainer flexCenter terrainBackground whiteText height50">&copy; Daniel Carlos</footer>
+        </div>
+        <script type="text/javascript" src="https://rawgit.com/peterhry/CircleType/master/dist/circletype.min.js"></script>
+        <script>
+           const circleType = new CircleType(document.getElementById('title'));
+           circleType.radius(300);
+        </script>
+    </body>
+</html>

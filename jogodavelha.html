@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PlayKids</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="flexContainer flexColumn fullHeight whiteBackground">
+            <nav class="flexContainer blueBackground">
+                <ul class="nav">
+                    <li><h1><span class="playlogo">Play</span>Kids</h1></li>
+                </ul>
+                <ul class="nav flexContainer">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="memoria.html">Jogo da Memória</a></li>
+                    <li><a href="aritmetica.html">Aritmética</a></li>
+                    <li><a href="jogodavelha.html">Jogo da Velha</a></li>
+                </ul>
+            </nav>
+            <div class="flexContainer flexItem">
+                <div class="content">
+                    <div class="bubbles">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>                        
+                    </div>
+                </div>
+                <div class="imagem1"></div>
+                <div class="imagem2"></div>
+                <div class="imagem3"></div>
+                <div class="imagem4"></div>
+                <div class="imagem5"></div>
+                <div class="imagem6"></div>
+
+            <form name="game" id="jogodavelha">
+                <table border=0>
+                    <td>
+                        <table border=0 style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" bordercolor="#000000"><a href="javascript:yourChoice('A')"><img src="img/blank.jpg" border=0 height=100 width=100 name=A alt="Top-Left"></a></td>
+                                <td bordercolor="#000000"><a href="javascript:yourChoice('B')"><img src="img/blank.jpg" border=0 height=100 width=100 name=B alt="Top-Center"></a></td>
+                                <td style="border-left-style: solid; border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" bordercolor="#000000"><a href="javascript:yourChoice('C')"><img src="img/blank.jpg" border=0 height=100 width=100 name=C alt="Top-Right"></a></td>
+                            </tr>
+                            <tr>
+                                <td style="border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-width: 1" bordercolor="#000000"><a href="javascript:yourChoice('D')"><img src="img/blank.jpg" border=0 height=100 width=100 name=D alt="Middle-Left"></a></td>
+                                <td style="border-left-width: 1; border-right-width: 1; border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" bordercolor="#000000"><a href="javascript:yourChoice('E')"><img src="img/blank.jpg" border=0 height=100 width=100 name=E alt="Middle-Center"></a></td>
+                                <td style="border-left-style: solid; border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-width: 1" bordercolor="#000000"><a href="javascript:yourChoice('F')"><img src="img/blank.jpg" border=0 height=100 width=100 name=F alt="Middle-Right"></a></td>
+                            </tr>
+                            <tr>
+                                <td style="border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-style: solid; border-top-width: 1" bordercolor="#000000"><a href="javascript:yourChoice('G')"><img src="img/blank.jpg" border=0 height=100 width=100 name=G alt="Bottom-Left"></a></td>
+                                <td><a href="javascript:yourChoice('H')"><img src="img/blank.jpg" border=0 height=100 width=100 name=H alt="Bottom-Center"></a></td>
+                                <td style="border-left-style: solid; border-left-width: 1; border-right-width: 1; border-top-style: solid; border-top-width: 1; border-bottom-width: 1" bordercolor="#000000"><a href="javascript:yourChoice('I')"><img src="img/blank.jpg" border=0 height=100 width=100  name=I alt="Bottom-Right"></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                    <table>
+                        <tr>
+                            <td><input type="text" size="5" name="you"></td>
+                            <td><font face="Verdana" style="font-size: 8pt">Você</font></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" size="5" name="computer"></td>
+                            <td><font face="Verdana" style="font-size: 8pt">Computador</font></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" size="5" name="ties"></td>
+                            <td><font face="Verdana" style="font-size: 8pt">Empates</font></td>
+                        </tr>
+                    </table>
+                    </td>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p align="center"><input type=button value="Jogar Denovo" onClick="playAgain();">
+                            <input type=button value="Como Jogar" onClick="help();">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+            <footer class="flexContainer flexCenter terrainBackground whiteText height50">&copy; Daniel Carlos</footer>
+            <script type="text/javascript" src="js/main.js"></script>
+        </div>
+    </body>
+</html>
